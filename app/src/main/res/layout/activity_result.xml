@@ -10,6 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/colorPrimary"
     tools:context="com.uinmalang.ahmadriza.apik.result">
+
     <TextView
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -19,14 +20,16 @@
         android:fontFamily="cursive"
         android:textStyle="bold"
         android:textColor="@android:color/white"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="20dp"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Display1"
         />
 
     <ScrollView
         android:layout_below="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,6 +49,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginRight="5dp"
+                    android:src="@drawable/body"
                     />
                 <LinearLayout
                     android:layout_width="0dp"
@@ -67,7 +71,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:text="Gemuk"
-                        android:textColor="@android:color/holo_red_dark"
+                        android:textColor="#f35b5c"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                         />
                 </LinearLayout>
@@ -84,6 +88,8 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginRight="5dp"
+                    android:src="@drawable/calorie"
+                    android:padding="20dp"
                     />
                 <LinearLayout
                     android:layout_width="0dp"
@@ -94,7 +100,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:layout_weight="1.3"
+                        android:layout_weight="1"
                         android:text="Kebutuhan kalori harian"
                         android:textColor="@color/grey"
                         android:gravity="bottom"
@@ -111,8 +117,21 @@
                         />
                 </LinearLayout>
             </LinearLayout>
-
+            <Button
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonroundwht"
+                android:text="bagikan"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"
+                android:padding="15dp"
+                />
         </LinearLayout>
-
     </ScrollView>
+
 </RelativeLayout>
