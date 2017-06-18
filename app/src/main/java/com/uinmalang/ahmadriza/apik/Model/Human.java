@@ -5,11 +5,11 @@ package com.uinmalang.ahmadriza.apik.Model;
  */
 
 public class Human {
-    private int weight;
-    private int height;
-    private int age;
-    private char gender;
-    private String activ;
+    protected int weight;
+    protected int height;
+    protected int age;
+    protected char gender;
+    protected String activ;
 
     public Human(int weight, int height, int age, char gender, String activ) {
         this.weight = weight;

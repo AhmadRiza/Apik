@@ -18,7 +18,7 @@
         <activity android:name=".Home" />
         <activity android:name=".FormUser" />
         <activity android:name=".Makanan" />
-        <activity android:name=".result"></activity>
+        <activity android:name=".Result"></activity>
     </application>
 
 </manifest>

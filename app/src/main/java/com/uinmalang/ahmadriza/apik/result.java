@@ -3,7 +3,7 @@ package com.uinmalang.ahmadriza.apik;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class result extends AppCompatActivity {
+public class Result extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
