@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Apik</string>
+    <!--Home-->
+    <string name="about">About</string>
+    <string name="btn1">Cek Kebutuhan Kalori</string>
+    <string name="btn2">Hitung Kalori Makanan</string>
+    <!--form1-->
+    <string name="isidata">Isi Data Anda</string>
+    <string name="nama">Nama : </string>
+    <string name="hintNama">Nama Anda</string>
+    <string name="gender">Gender : </string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="umur">Usia : </string>
+    <string name="hintumur"> - Tahun</string>
+    <string name="berat">Berat Badan : </string>
+    <string name="hintbrt"> - Kg</string>
+    <string name="tinggi">Tinggi Badan : </string>
+    <string name="hinttinggi"> - cm</string>
+    <string name="aktiv">Aktivitas : </string>
+    <string name="Aberat">Berat</string>
+    <string name="ASedang">Sedang</string>
+    <string name="ARingan">Ringan</string>
+    <string name="Lanjut">Lanjutkan</string>
+    <string name="pilih">Pilih satu</string>
+    <string-array name="makanan_pokok">
+        <item>Nasi Beras</item>
+        <item>Nasi Jagung</item>
+        <item>Roti</item>
+        <item>Singkong</item>
+        <item>Ubi</item>
+        <item>Kentang</item>
+        <item>Sagu</item>
+    </string-array>
+
+</resources>
