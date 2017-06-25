@@ -32,5 +32,6 @@
         <item>Kentang</item>
         <item>Sagu</item>
     </string-array>
+    <string name="title_activity_search_makanan">SearchMakanan</string>
 
 </resources>

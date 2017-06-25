@@ -119,7 +119,6 @@ public class FormUser extends AppCompatActivity {
                     kebutuhanKalori=CN.getCalorieNeed();
                 }else{
                     //TODO make warning dialog number exception
-
                     return;
                 }
                 //throws Result ke activity Result

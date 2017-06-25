@@ -10,6 +10,8 @@ import android.os.Handler;
 
 public class Splashscreen extends AppCompatActivity {
 
+    //TODO fix whitescreen
+
     private static int splashInterval = 1;
 
     @Override
@@ -24,7 +26,6 @@ public class Splashscreen extends AppCompatActivity {
                 // TODO Auto-generated method stub
                 Intent i = new Intent(Splashscreen.this, Home.class);
                 startActivity(i); // menghubungkan activity splashscren ke main activity dengan intent
-
                 this.finish();
             }
 

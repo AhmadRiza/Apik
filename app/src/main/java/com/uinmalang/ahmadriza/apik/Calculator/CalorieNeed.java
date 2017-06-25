@@ -42,7 +42,6 @@ public class CalorieNeed extends Human{
         }else{
             calorieNeed = 1.7 * bmr;
         }
-
         result = String.format("%.2f",calorieNeed);
         return result;
     }
