@@ -33,7 +33,7 @@ public class Home extends AppCompatActivity {
         btnHitung.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),Makanan.class);
+                Intent i = new Intent(getApplicationContext(),KaloriMakanan.class);
                 startActivity(i);
             }
         });
@@ -41,22 +41,4 @@ public class Home extends AppCompatActivity {
     }
 
 
-    //Tombol Back kalo di pencet
-    @Override
-    public void onBackPressed(){
-        ContextThemeWrapper ctw = new ContextThemeWrapper(this,R.style.Theme_AlertDialog_Title);
-        new AlertDialog.Builder(ctw).setIcon(android.R.drawable.ic_dialog_alert).
-                setTitle("Keluar").setMessage("Apa anda yakin akan keluar?").
-                setPositiveButton("Ya", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Intent intent= new Intent(Intent.ACTION_MAIN);
-                intent.addCategory(intent.CATEGORY_HOME);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-                finish();
-                System.exit(0);
-            }
-        }).setNegativeButton("Tidak",null).show();
-    }
 }

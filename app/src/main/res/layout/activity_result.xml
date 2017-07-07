@@ -32,6 +32,8 @@
         >
 
         <LinearLayout
+            android:id="@+id/resultView"
+            android:isScrollContainer="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
@@ -81,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:background="@drawable/panel"
-                android:elevation="8dp"
+                android:elevation="5dp"
                 android:orientation="horizontal"
                 android:layout_marginTop="10dp"
                 >

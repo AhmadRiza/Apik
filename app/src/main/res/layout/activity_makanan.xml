@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
-    tools:context="com.uinmalang.ahmadriza.apik.Makanan"
+    tools:context="com.uinmalang.ahmadriza.apik.KaloriMakanan"
     android:background="@android:color/white"
     >
     <LinearLayout
@@ -15,7 +15,6 @@
         android:background="@drawable/header"
         android:elevation="5dp"
         >
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,11 +29,13 @@
             />
     </LinearLayout>
     <ScrollView
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="20dp"
-        android:paddingTop="20dp"
+        android:layout_height="match_parent"
         android:layout_below="@+id/HEADER"
+        android:scrollbars="horizontal"
+        android:clipToPadding="false"
         >
 
         <LinearLayout
@@ -43,6 +44,9 @@
             android:orientation="vertical"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:clipToPadding="false"
             >
 
             <LinearLayout
@@ -50,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
-                android:elevation="5dp"
+                android:elevation="2dp"
                 >
                 <ImageView
                     android:layout_width="40dp"
@@ -80,10 +84,13 @@
                     android:src="@drawable/dropdown"
                     android:padding="6dp"
                     />
+
                 <EditText
+                    android:id="@+id/txtPokok"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
+                    android:inputType="number"
                     android:hint="berat"
                     android:textColor="@color/grey"
                     android:gravity="center"
@@ -105,6 +112,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView
@@ -137,9 +145,11 @@
                     android:padding="6dp"
                     />
                 <EditText
+                    android:id="@+id/txtLauk"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
+                    android:inputType="number"
                     android:hint="berat"
                     android:textColor="@color/grey"
                     android:gravity="center"
@@ -161,6 +171,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView
@@ -193,9 +204,11 @@
                     android:padding="6dp"
                     />
                 <EditText
+                    android:id="@+id/txtRingan"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
+                    android:inputType="number"
                     android:hint="berat"
                     android:textColor="@color/grey"
                     android:gravity="center"
@@ -217,6 +230,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView
@@ -248,11 +262,14 @@
                     android:src="@drawable/dropdown"
                     android:padding="6dp"
                     />
+                <!--TODO SAYURAN BUAH ICON-->
                 <EditText
+                    android:id="@+id/txtSayur"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
-                    android:hint="jml"
+                    android:inputType="number"
+                    android:hint="berat"
                     android:textColor="@color/grey"
                     android:gravity="center"
                     android:textColorHint="@color/hint"
@@ -273,6 +290,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView
@@ -305,10 +323,12 @@
                     android:padding="6dp"
                     />
                 <EditText
+                    android:id="@+id/txtBuah"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
-                    android:hint="jml"
+                    android:inputType="number"
+                    android:hint="berat"
                     android:textColor="@color/grey"
                     android:gravity="center"
                     android:textColorHint="@color/hint"
@@ -329,6 +349,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView
@@ -361,9 +382,11 @@
                     android:padding="6dp"
                     />
                 <EditText
+                    android:id="@+id/txtMinum"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
+                    android:inputType="number"
                     android:hint="jml"
                     android:textColor="@color/grey"
                     android:gravity="center"
@@ -392,10 +415,11 @@
         android:padding="10dp"
         >
         <TextView
+            android:id="@+id/lblKalori"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2234"
+            android:text="0"
             android:paddingRight="5dp"
             android:textColor="@android:color/white"
             android:gravity="right"

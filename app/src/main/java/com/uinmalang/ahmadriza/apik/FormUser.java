@@ -60,8 +60,8 @@ public class FormUser extends AppCompatActivity {
         imgL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                chkL.setChecked(true);
-                chkP.setChecked(false);
+                chkL.setVisibility(View.VISIBLE);
+                chkP.setVisibility(View.INVISIBLE);
                 gender = 'L';
             }
         });
@@ -70,8 +70,8 @@ public class FormUser extends AppCompatActivity {
         imgP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                chkL.setChecked(false);
-                chkP.setChecked(true);
+                chkP.setVisibility(View.VISIBLE);
+                chkL.setVisibility(View.INVISIBLE);
                 gender = 'P';
             }
         });
@@ -80,9 +80,9 @@ public class FormUser extends AppCompatActivity {
         imgRingan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                chkRingan.setChecked(true);
-                chkSedang.setChecked(false);
-                chkBerat.setChecked(false);
+                chkRingan.setVisibility(View.VISIBLE);
+                chkSedang.setVisibility(View.INVISIBLE);
+                chkBerat.setVisibility(View.INVISIBLE);
                 aktivitas="ringan";
             }
         });
@@ -91,9 +91,9 @@ public class FormUser extends AppCompatActivity {
         imgSedang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                chkRingan.setChecked(false);
-                chkSedang.setChecked(true);
-                chkBerat.setChecked(false);
+                chkRingan.setVisibility(View.INVISIBLE);
+                chkSedang.setVisibility(View.VISIBLE);
+                chkBerat.setVisibility(View.INVISIBLE);
                 aktivitas="sedang";
             }
         });
@@ -102,9 +102,9 @@ public class FormUser extends AppCompatActivity {
         imgBerat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                chkRingan.setChecked(false);
-                chkSedang.setChecked(false);
-                chkBerat.setChecked(true);
+                chkRingan.setVisibility(View.INVISIBLE);
+                chkSedang.setVisibility(View.INVISIBLE);
+                chkBerat.setVisibility(View.VISIBLE);
                 aktivitas="berat";
             }
         });
@@ -113,14 +113,16 @@ public class FormUser extends AppCompatActivity {
         btnLanjut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (validate()){
+                if (valid()){
                     CalorieNeed CN = new CalorieNeed(berat,tinggi,umur,gender,aktivitas);
                     kategoriTubuh=CN.getBodyCategory();
-                    kebutuhanKalori=CN.getCalorieNeed();
+                    kebutuhanKalori=CN.getCalorieNeed()+" KKal";
                 }else{
                     //TODO make warning dialog number exception
+
                     return;
                 }
+
                 //throws Result ke activity Result
                 Intent intent = new Intent(getApplicationContext(), Result.class);
                 Bundle extras = new Bundle();
@@ -133,7 +135,7 @@ public class FormUser extends AppCompatActivity {
         });
     }
 
-    private boolean validate(){
+    private boolean valid(){
         if (txtUmur.getText().toString().equals("")||
                 txtBerat.getText().toString().equals("")||
                 txtTinggi.getText().toString().equals("")||
@@ -146,11 +148,11 @@ public class FormUser extends AppCompatActivity {
             berat = Integer.parseInt(txtBerat.getText().toString());
             tinggi = Integer.parseInt(txtTinggi.getText().toString());
             umur = Integer.parseInt(txtUmur.getText().toString());
-            return true;
         }catch (NumberFormatException e){
+            e.printStackTrace();
             return false;
         }
-
+        return true;
     }
 
 

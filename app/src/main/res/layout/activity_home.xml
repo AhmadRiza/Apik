@@ -33,7 +33,8 @@
         android:textSize="20sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:fadingEdge="none" />
+        android:elevation="0dp"
+        />
 
     <Button
         android:text="@string/btn1"
@@ -45,7 +46,9 @@
         android:layout_centerHorizontal="true"
         android:textSize="18sp"
         android:layout_height="55dp"
-        android:background="@color/colorPrimary" />
+        android:background="@drawable/button_primary"
+        android:textColor="@android:color/white"
+        />
 
     <Button
         android:text="@string/btn2"
@@ -57,5 +60,6 @@
         android:id="@+id/btnHitungKalori"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:background="@color/colorAccent" />
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_accent" />
 </RelativeLayout>

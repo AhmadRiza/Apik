@@ -23,15 +23,7 @@
     <string name="ARingan">Ringan</string>
     <string name="Lanjut">Lanjutkan</string>
     <string name="pilih">Pilih satu</string>
-    <string-array name="makanan_pokok">
-        <item>Nasi Beras</item>
-        <item>Nasi Jagung</item>
-        <item>Roti</item>
-        <item>Singkong</item>
-        <item>Ubi</item>
-        <item>Kentang</item>
-        <item>Sagu</item>
-    </string-array>
+
     <string name="title_activity_search_makanan">SearchMakanan</string>
 
 </resources>
