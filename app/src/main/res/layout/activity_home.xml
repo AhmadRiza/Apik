@@ -33,7 +33,6 @@
         android:textSize="20sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:elevation="0dp"
         />
 
     <Button

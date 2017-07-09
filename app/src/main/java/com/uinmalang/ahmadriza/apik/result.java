@@ -14,6 +14,7 @@ public class Result extends AppCompatActivity {
 
     String kategori="",kalori="";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/HEADER"
         android:background="@drawable/header"
+        android:elevation="5dp"
         >
         <TextView
             android:layout_width="match_parent"
@@ -51,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
                 <ImageView
                     android:layout_width="40dp"
@@ -109,6 +111,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView
@@ -168,6 +171,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView
@@ -227,6 +231,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView
@@ -287,6 +292,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView
@@ -302,7 +308,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/buah"
+                    android:text="Buah-buahan"
                     android:clickable="true"
                     android:id="@+id/lblBuah"
                     android:textColor="@android:color/white"
@@ -346,6 +352,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:background="@drawable/backwithborder"
+                android:elevation="2dp"
                 >
 
                 <ImageView

@@ -1,29 +1,48 @@
 <resources>
+    <!--splash-->
+    <string name="splash_desc">Aplikasi Penghitung Kalori</string>
     <string name="app_name">Apik</string>
     <!--Home-->
-    <string name="about">About</string>
-    <string name="btn1">Cek Kebutuhan Kalori</string>
+    <string name="about">Tentang</string>
+    <string name="btn1">Analisa Tubuh Anda</string>
     <string name="btn2">Hitung Kalori Makanan</string>
-    <!--form1-->
-    <string name="isidata">Isi Data Anda</string>
-    <string name="nama">Nama : </string>
-    <string name="hintNama">Nama Anda</string>
-    <string name="gender">Gender : </string>
-    <string name="pria">Pria</string>
-    <string name="wanita">Wanita</string>
-    <string name="umur">Usia : </string>
-    <string name="hintumur"> - Tahun</string>
-    <string name="berat">Berat Badan : </string>
-    <string name="hintbrt"> - Kg</string>
-    <string name="tinggi">Tinggi Badan : </string>
-    <string name="hinttinggi"> - cm</string>
-    <string name="aktiv">Aktivitas : </string>
-    <string name="Aberat">Berat</string>
-    <string name="ASedang">Sedang</string>
-    <string name="ARingan">Ringan</string>
-    <string name="Lanjut">Lanjutkan</string>
-    <string name="pilih">Pilih satu</string>
-
+    <!--form_user-->
+    <string name="analisa_tubuh">Analisa Tubuh</string>
+    <string name="tinggi_badan">Tinggi Badan</string>
     <string name="title_activity_search_makanan">SearchMakanan</string>
+    <string name="cm">cm</string>
+    <string name="berat_badan">Berat Badan</string>
+    <string name="kg">Kg</string>
+    <string name="umur">Umur</string>
+    <string name="tahun">Tahun</string>
+    <string name="gender">Gender</string>
+    <string name="aktivitas">Aktivitas</string>
+    <string name="ringan">ringan</string>
+    <string name="sedang">sedang</string>
+    <string name="berat">berat</string>
+    <string name="lanjut">lanjut</string>
+    <!--result-->
+    <string name="hasil_analisa">Hasil Analisa</string>
+    <string name="Kategori_tubuh">Kategori Tubuh</string>
+    <string name="gemuk">Gemuk</string>
+    <string name="normal">Normal</string>
+    <string name="kurus">Kurus</string>
+    <string name="kebutuhan_kalori">Kebutuhan kalori harian</string>
+    <string name="bagikan">bagikan</string>
+    <!--makanan-->
+    <string name="hitung_kalori">Hitung Kalori</string>
+    <string name="makanan_pokok">Makanan Pokok</string>
+    <string name="lauk_pauk">Lauk Pauk</string>
+    <string name="makanan_ringan">Makanan Ringan</string>
+    <string name="sayuran">Sayuran</string>
+    <string name="minuman">Minuman</string>
+    <string name="jml">jml</string>
+    <string name="buah">Buah-buahan</string>
+    <!--add-->
+    <string name="tambah_makanan">Tambah Makanan</string>
+    <string name="nama_makanan">Nama Makanan</string>
+    <string name="kalori_per_gram">Kalori per Gram</string>
+    <string name="tambahkan">tambahkan</string>
+
 
 </resources>
