@@ -1,4 +1,4 @@
-package com.uinmalang.ahmadriza.apik;
+package com.mobilemocap.ahmadriza.apik;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,7 +9,7 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.uinmalang.ahmadriza.apik.Calculator.CalorieNeed;
+import com.mobilemocap.ahmadriza.apik.Calculator.CalorieNeed;
 
 public class FormUser extends AppCompatActivity {
 

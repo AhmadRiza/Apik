@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
-    tools:context="com.uinmalang.ahmadriza.apik.FormUser"
+    tools:context="com.mobilemocap.ahmadriza.apik.FormUser"
     android:background="@color/colorPrimary">
 
     <TextView
@@ -364,7 +364,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                    android:text="@string/berat"
+                    android:text="@string/beratt"
                     android:paddingBottom="5dp"
                     android:textColor="@color/danger"
                     android:gravity="center"
@@ -375,6 +375,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <Button
         android:id="@+id/btnLanjut"
         android:layout_width="match_parent"

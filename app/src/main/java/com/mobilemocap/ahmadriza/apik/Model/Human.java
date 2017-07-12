@@ -1,4 +1,4 @@
-package com.uinmalang.ahmadriza.apik.Model;
+package com.mobilemocap.ahmadriza.apik.Model;
 
 /**
  * Created by Ahmad Riza on 18/06/2017.

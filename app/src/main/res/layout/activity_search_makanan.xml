@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.uinmalang.ahmadriza.apik.SearchMakanan">
+    tools:context="com.mobilemocap.ahmadriza.apik.SearchMakanan">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBar"
@@ -32,7 +32,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Cari Makanan"
+                android:hint="@string/cari_makanan"
                 android:textColorHint="@color/hint"
                 android:textColor="@color/grey"
                 android:padding="10dp"

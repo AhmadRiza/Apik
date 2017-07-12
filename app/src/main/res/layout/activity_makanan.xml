@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="0dp"
-    tools:context="com.uinmalang.ahmadriza.apik.KaloriMakanan"
+    tools:context="com.mobilemocap.ahmadriza.apik.KaloriMakanan"
     android:background="@android:color/white"
     >
     <LinearLayout
@@ -232,7 +232,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/minum"
+                    android:src="@drawable/vege"
                     android:padding="4dp"
                     />
 
@@ -292,7 +292,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/minum"
+                    android:src="@drawable/banana"
                     android:padding="4dp"
                     />
 
@@ -351,7 +351,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/minum"
+                    android:src="@drawable/vege"
                     android:padding="4dp"
                     />
 
@@ -361,9 +361,9 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="@string/minuman"
+                    android:text="@string/siap_saji"
                     android:clickable="true"
-                    android:id="@+id/lblMinum"
+                    android:id="@+id/lblSiapSaji"
                     android:textColor="@android:color/white"
                     android:background="@color/colorPrimary"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
@@ -379,12 +379,12 @@
                     android:padding="6dp"
                     />
                 <EditText
-                    android:id="@+id/txtMinum"
+                    android:id="@+id/txtSiapSaji"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.4"
                     android:inputType="number"
-                    android:hint="@string/jml"
+                    android:hint="@string/berat"
                     android:textColor="@color/grey"
                     android:gravity="center"
                     android:textColorHint="@color/hint"
@@ -393,7 +393,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
-                    android:text="ml"
+                    android:text="gr"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                     android:gravity="center_vertical"
                     android:textColor="@color/colorPrimary"

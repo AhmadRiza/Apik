@@ -1,4 +1,4 @@
-package com.uinmalang.ahmadriza.apik.DBHelper;
+package com.mobilemocap.ahmadriza.apik.DBHelper;
 
 /**
  * Created by Ahmad Riza on 04/07/2017.

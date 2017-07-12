@@ -1,4 +1,4 @@
-package com.uinmalang.ahmadriza.apik.DBHelper;
+package com.mobilemocap.ahmadriza.apik.DBHelper;
 
 /**
  * Created by Ahmad Riza on 04/07/2017.
@@ -13,7 +13,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.uinmalang.ahmadriza.apik.Model.Makanan;
+import com.mobilemocap.ahmadriza.apik.Model.Makanan;
 
 public class DataAdapter
 {

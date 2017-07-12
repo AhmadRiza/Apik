@@ -1,9 +1,8 @@
-package com.uinmalang.ahmadriza.apik;
+package com.mobilemocap.ahmadriza.apik;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -13,9 +12,9 @@ import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 
-import com.uinmalang.ahmadriza.apik.Adapter.MakananAdapter;
-import com.uinmalang.ahmadriza.apik.DBHelper.DataAdapter;
-import com.uinmalang.ahmadriza.apik.Model.Makanan;
+import com.mobilemocap.ahmadriza.apik.Adapter.MakananAdapter;
+import com.mobilemocap.ahmadriza.apik.DBHelper.DataAdapter;
+import com.mobilemocap.ahmadriza.apik.Model.Makanan;
 
 import java.util.ArrayList;
 

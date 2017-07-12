@@ -1,6 +1,6 @@
-package com.uinmalang.ahmadriza.apik.Calculator;
+package com.mobilemocap.ahmadriza.apik.Calculator;
 
-import com.uinmalang.ahmadriza.apik.Model.Human;
+import com.mobilemocap.ahmadriza.apik.Model.Human;
 
 /**
  * Created by Ahmad Riza on 18/06/2017.
@@ -21,7 +21,7 @@ public class CalorieNeed extends Human{
         super(weight, height, age, gender, activ);
     }
 
-    public double getBmr(){
+    private double getBmr(){
         //menghitung basal metabolic rate
         if (gender=='L'){
             return 66.4730 + (13.7516 * weight) + (5.0033 * height) - (6.7550 * age);
@@ -60,7 +60,7 @@ public class CalorieNeed extends Human{
         }
     }
 
-    public double getBbr(){
+    private double getBbr(){
         //ini untuk mengetahui kategori tubuh
         return (weight/(height-100)*100);
     }

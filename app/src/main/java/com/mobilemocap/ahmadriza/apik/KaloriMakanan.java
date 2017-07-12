@@ -1,8 +1,10 @@
-package com.uinmalang.ahmadriza.apik;
+package com.mobilemocap.ahmadriza.apik;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -14,9 +16,9 @@ public class KaloriMakanan extends AppCompatActivity {
     public final int KATEGORI_POKOK=0;
     public final int KATEGORI_LAUK=1;
     public final int KATEGORI_SAYUR=2;
-    public final int KATEGORI_BUAH=3;
-    public final int KATEGORI_MAKANAN_RINGAN=4;
-    public final int KATEGORI_MINUMAN=5;
+    public final int KATEGORI_SIAP_SAJI =3;
+    public final int KATEGORI_BUAH=4;
+    public final int KATEGORI_MAKANAN_RINGAN=5;
     public final static  String TAG = KaloriMakanan.class.getSimpleName();
     double result;
     String [] nama;
@@ -28,14 +30,14 @@ public class KaloriMakanan extends AppCompatActivity {
     TextView lblRingan;
     TextView lblSayur;
     TextView lblBuah;
-    TextView lblMinum;
+    TextView lblSiapSaji;
     TextView lblKalori;
     EditText txtPokok;
     EditText txtLauk;
     EditText txtRingan;
     EditText txtSayur;
     EditText txtBuah;
-    EditText txtMinum;
+    EditText txtSiapSaji;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,14 +50,14 @@ public class KaloriMakanan extends AppCompatActivity {
         lblRingan = (TextView)findViewById(R.id.lblRingan);
         lblBuah = (TextView)findViewById(R.id.lblBuah);
         lblSayur = (TextView)findViewById(R.id.lblSayur);
-        lblMinum = (TextView)findViewById(R.id.lblMinum);
+        lblSiapSaji = (TextView)findViewById(R.id.lblSiapSaji);
         lblKalori = (TextView)findViewById(R.id.lblKalori);
         txtPokok = (EditText) findViewById(R.id.txtPokok);
         txtLauk = (EditText) findViewById(R.id.txtLauk);
         txtRingan = (EditText) findViewById(R.id.txtRingan);
         txtBuah = (EditText) findViewById(R.id.txtBuah);
         txtSayur = (EditText) findViewById(R.id.txtSayur);
-        txtMinum = (EditText) findViewById(R.id.txtMinum);
+        txtSiapSaji = (EditText) findViewById(R.id.txtSiapSaji);
 
 
         berat = new int[SearchMakanan.ITEM_SUM];
@@ -145,30 +147,115 @@ public class KaloriMakanan extends AppCompatActivity {
         });
 
 
-        lblMinum.setOnClickListener(new View.OnClickListener() {
+        lblSiapSaji.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),SearchMakanan.class);
                 Bundle extras = new Bundle();
                 extras.putDoubleArray(SearchMakanan.KEY_KALORI,kalori);
                 extras.putStringArray(SearchMakanan.KEY_NAMA,nama);
-                extras.putInt("JENIS",KATEGORI_MINUMAN+1);
+                extras.putInt("JENIS", KATEGORI_SIAP_SAJI +1);
                 i.putExtras(extras);
                 startActivity(i);
             }
         });
 
-
-        //TODO MAKE LISTENER EACH TEXT
-        LinearLayout result = (LinearLayout) findViewById(R.id.resultView);
-        result.setClickable(true);
-        result.setOnClickListener(new View.OnClickListener() {
+        txtPokok.addTextChangedListener(new TextWatcher() {
             @Override
-            public void onClick(View v) {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
                 updateResult();
             }
         });
+        txtLauk.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                updateResult();
+            }
+        });
+        txtRingan.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                updateResult();
+            }
+        });
+        txtBuah.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                updateResult();
+            }
+        });
+        txtSayur.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                updateResult();
+            }
+        });
+        txtSiapSaji.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                updateResult();
+            }
+        });
 
     }
 
@@ -180,7 +267,7 @@ public class KaloriMakanan extends AppCompatActivity {
         if ( !(tempNama=nama[KATEGORI_SAYUR]).equals("") )lblSayur.setText(tempNama);
         if ( !(tempNama=nama[KATEGORI_BUAH]).equals("") )lblBuah.setText(tempNama);
         if ( !(tempNama=nama[KATEGORI_MAKANAN_RINGAN]).equals("") )lblRingan.setText(tempNama);
-        if ( !(tempNama=nama[KATEGORI_MINUMAN]).equals("") )lblMinum.setText(tempNama);
+        if ( !(tempNama=nama[KATEGORI_SIAP_SAJI]).equals("") ) lblSiapSaji.setText(tempNama);
 
     }
 
@@ -192,7 +279,7 @@ public class KaloriMakanan extends AppCompatActivity {
         if ( !(tempWeight=txtBuah.getText().toString()).equals("") )berat[KATEGORI_BUAH]=Integer.parseInt(tempWeight);
         if ( !(tempWeight=txtSayur.getText().toString()).equals("") )berat[KATEGORI_SAYUR]=Integer.parseInt(tempWeight);
         if ( !(tempWeight=txtRingan.getText().toString()).equals("") )berat[KATEGORI_MAKANAN_RINGAN]=Integer.parseInt(tempWeight);
-        if ( !(tempWeight=txtMinum.getText().toString()).equals("") )berat[KATEGORI_MINUMAN]=Integer.parseInt(tempWeight);
+        if ( !(tempWeight= txtSiapSaji.getText().toString()).equals("") )berat[KATEGORI_SIAP_SAJI]=Integer.parseInt(tempWeight);
 
         result = (
                           (kalori[KATEGORI_POKOK] * berat[KATEGORI_POKOK])
@@ -200,7 +287,7 @@ public class KaloriMakanan extends AppCompatActivity {
                         + (kalori[KATEGORI_SAYUR] * berat[KATEGORI_SAYUR])
                         + (kalori[KATEGORI_BUAH] * berat[KATEGORI_BUAH])
                         + (kalori[KATEGORI_MAKANAN_RINGAN] * berat[KATEGORI_MAKANAN_RINGAN])
-                        + (kalori[KATEGORI_MINUMAN] * berat[KATEGORI_MINUMAN])
+                        + (kalori[KATEGORI_SIAP_SAJI] * berat[KATEGORI_SIAP_SAJI])
 
                     );
 

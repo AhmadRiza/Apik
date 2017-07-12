@@ -10,5 +10,6 @@
     <color name="searchbox">#77badd</color>
     <color name="danger">#f35b5c</color>
     <color name="warning">#d59931</color>
+    <color name="trans">#bf000000</color>
 
 </resources>

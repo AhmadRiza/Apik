@@ -1,11 +1,19 @@
 <resources>
+    <!-- This is an ad unit ID for a test ad. Replace with your own banner ad unit id. -->
+    <string name="home_banner_ad_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="result_banner_ad_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="add_banner_ad_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="app_name">Apik</string>
+    <string name="app_name_version" translatable="false">Apik 1.0</string>
+    <string name="app_link" translatable="false">http://play.google.com</string>
     <!--splash-->
     <string name="splash_desc">Aplikasi Penghitung Kalori</string>
-    <string name="app_name">Apik</string>
     <!--Home-->
     <string name="about">Tentang</string>
     <string name="btn1">Analisa Tubuh Anda</string>
     <string name="btn2">Hitung Kalori Makanan</string>
+    <string name="ask_back">Tekan lagi untuk keluar</string>
     <!--form_user-->
     <string name="analisa_tubuh">Analisa Tubuh</string>
     <string name="tinggi_badan">Tinggi Badan</string>
@@ -23,19 +31,22 @@
     <string name="lanjut">lanjut</string>
     <!--result-->
     <string name="hasil_analisa">Hasil Analisa</string>
-    <string name="Kategori_tubuh">Kategori Tubuh</string>
+    <string name="kategori_tubuh">Kategori Tubuh</string>
     <string name="gemuk">Gemuk</string>
     <string name="normal">Normal</string>
     <string name="kurus">Kurus</string>
     <string name="kebutuhan_kalori">Kebutuhan kalori harian</string>
     <string name="bagikan">bagikan</string>
+    <string name="body_cat_res">Hasil Analisis Tubuh Saya:</string>
+    <string name="hitung_bla">Analisa tubuh anda sekarang !</string>
+    <string name="share_title">Bagikan menggunakan..</string>
     <!--makanan-->
     <string name="hitung_kalori">Hitung Kalori</string>
     <string name="makanan_pokok">Makanan Pokok</string>
     <string name="lauk_pauk">Lauk Pauk</string>
-    <string name="makanan_ringan">Makanan Ringan</string>
+    <string name="makanan_ringan">Jajanan</string>
     <string name="sayuran">Sayuran</string>
-    <string name="minuman">Minuman</string>
+    <string name="siap_saji">Siap Saji</string>
     <string name="jml">jml</string>
     <string name="buah">Buah-buahan</string>
     <!--add-->
@@ -43,6 +54,10 @@
     <string name="nama_makanan">Nama Makanan</string>
     <string name="kalori_per_gram">Kalori per Gram</string>
     <string name="tambahkan">tambahkan</string>
+    <string name="tutup">Tutup</string>
+    <string name="beratt">berat</string>
+    <string name="cari_makanan">Cari Makanan</string>
+    <string name="kembali">kembali</string>
 
 
 </resources>

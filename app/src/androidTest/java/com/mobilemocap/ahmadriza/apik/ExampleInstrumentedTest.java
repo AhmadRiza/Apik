@@ -1,4 +1,4 @@
-package com.uinmalang.ahmadriza.apik;
+package com.mobilemocap.ahmadriza.apik;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

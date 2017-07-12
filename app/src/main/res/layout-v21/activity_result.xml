@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_result"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/colorPrimary"
-    tools:context="com.uinmalang.ahmadriza.apik.Result">
+    tools:context="com.mobilemocap.ahmadriza.apik.Result">
 
     <TextView
         android:id="@+id/header"
@@ -44,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:background="@drawable/panel"
-                android:elevation="5dp"
+                android:elevation="4dp"
                 android:orientation="horizontal"
                 >
                 <ImageView
@@ -62,7 +63,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="@string/Kategori_tubuh"
+                        android:text="@string/kategori_tubuh"
                         android:textColor="@color/grey"
                         android:gravity="bottom"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
@@ -119,13 +120,13 @@
                 </LinearLayout>
             </LinearLayout>
             <Button
-                android:id="@+id/btnShare"
-                android:layout_marginTop="100dp"
+                android:id="@+id/btnBack"
+                android:layout_marginTop="50dp"
                 android:layout_gravity="center"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/buttonroundwht"
-                android:text="@string/bagikan"
+                android:text="@string/kembali"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorPrimary"
                 android:fontFamily="sans-serif-smallcaps"
@@ -135,5 +136,16 @@
                 />
         </LinearLayout>
     </ScrollView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/result_banner_ad_id"
+        >
+
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

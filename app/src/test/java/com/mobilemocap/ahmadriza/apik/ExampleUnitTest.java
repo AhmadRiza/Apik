@@ -1,4 +1,4 @@
-package com.uinmalang.ahmadriza.apik;
+package com.mobilemocap.ahmadriza.apik;
 
 import org.junit.Test;
 
